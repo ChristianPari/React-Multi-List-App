@@ -1,9 +1,19 @@
 import React from 'react'
 
+// components
+import NavBar from './Components/NavBar'
+import Body from './Components/Body'
+
+// contexts
+import {ListsContextProvider} from './Contexts/ListsContext'
+
 export default function App() {
   return (
     <div className="App">
-      The start of a reaction!
+      <ListsContextProvider>
+        <NavBar />
+        <Body />
+      </ListsContextProvider>
     </div>
   )
 }
