@@ -2,18 +2,18 @@ import React from 'react'
 
 // components
 import NavBar from './Components/NavBar'
-import Body from './Components/Body'
+import Board from './Components/Board'
 
 // contexts
-import {ListsContextProvider} from './Contexts/ListsContext'
+import {CardContextProvider} from './Contexts/CardContext'
 
 export default function App() {
   return (
     <div className="App">
-      <ListsContextProvider>
+      <CardContextProvider>
         <NavBar />
-        <Body />
-      </ListsContextProvider>
+        <Board />
+      </CardContextProvider>
     </div>
   )
 }

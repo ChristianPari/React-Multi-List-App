@@ -1,14 +1,14 @@
 import React from 'react'
 
 // components
-import ListContainer from './ListContainer'
-import NewListForm from './NewListForm'
+import CardContainer from './CardContainer'
+import NewCard from './NewCard'
 
 export default function Body() {
   return (
     <div className='app-body'>
-      <ListContainer />
-      <NewListForm />
+      <CardContainer />
+      <NewCard />
     </div>
   )
 }

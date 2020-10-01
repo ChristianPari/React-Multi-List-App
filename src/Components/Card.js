@@ -1,9 +1,9 @@
 import React from 'react'
 
 // components
-import ListItem from './ListItem'
+import CardItem from './CardItem'
 
-export default function ListElement(props) {
+export default function Card(props) {
   let title;
   let id;
   let items;
@@ -24,7 +24,7 @@ export default function ListElement(props) {
           <ul>
             {items.map(item => {
               return (
-              <ListItem />
+              <CardItem />
               )
             })}
           </ul> :

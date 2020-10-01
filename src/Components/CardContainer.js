@@ -1,21 +1,21 @@
 import React from 'react'
 
 // components
-import ListElement from './ListElement'
+import Card from './Card'
 //? not sure if i'll need the below component
 // import ListItem from './ListItem'
 
 // contexts
 import { useLists } from '../Contexts/ListsContext'
 
-export default function ListContainer() {
+export default function CardContainer() {
   const lists = useLists()
 
   return (
     <div className='list-container'>
       {lists.map((list, i) => {
         return (
-          <ListElement 
+          <Card 
             data={list}
             key={i}
           />
